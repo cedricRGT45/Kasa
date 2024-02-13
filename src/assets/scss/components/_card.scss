@@ -1,0 +1,74 @@
+@use "../utils/placeholders" as *;
+@use "../utils/variables" as *;
+
+.cards {
+  width: 95%;
+  @extend %flex-column;
+  justify-content: center;
+  gap: 1.62rem;
+  flex-wrap: wrap;
+  margin: auto;
+  margin-bottom: 1.69rem;
+
+  @media (min-width: 768px) {
+    width: 83%;
+    max-width: 71.3rem;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 3.75rem;
+    margin-bottom: 5.69rem;
+  }
+  @media (min-width: 1200px) {
+    min-width: 71.4rem;
+  }
+  @media (min-width: 1024px) and (max-width: 1199px) {
+    width: 95%;
+    justify-content: center;
+  }
+  &__card {
+    position: relative;
+    max-width: 20.93rem;
+    height: 15.9375rem;
+    margin: auto;
+    @media (min-width: 768px) and (max-width: 1023px) {
+      width: 100%;
+      max-width: 40rem;
+      height: 21.25rem;
+      margin: auto;
+    }
+
+    @media (min-width: 1024px) and (max-width: 1199px) {
+      width: 43%;
+      max-width: 30rem;
+    }
+
+    @media (min-width: 1200px) {
+      max-width: 21.25rem;
+      height: 21.25rem;
+      margin: 0;
+    }
+    &-img {
+      width: 100%;
+      height: 100%;
+      border-radius: 0.625rem;
+      object-fit: cover;
+    }
+    &-title {
+      width: auto;
+      max-width: 15rem;
+      min-height: 3.25rem;
+      line-height: 3.25rem;
+      position: absolute;
+      bottom: 0.94em;
+      left: 1rem;
+      color: $title-color;
+      border-radius: 0.625rem;
+      background: rgba(255, 96, 96, 0.8);
+      line-height: 1.6rem;
+      padding: 0.5rem;
+      @media (min-width: 768px) {
+        height: 4rem;
+      }
+    }
+  }
+}

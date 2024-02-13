@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+
+$family-font: "Montserrat", serif;
+$font-weight-title: 700;
+$font-weight-text: 500;
+$font-sizeLink-mobile: 0.75rem;
+$font-sizeLink-desktop: 1.5rem;
+$font-sizeTitle-mobile: 1.5rem;
+$font-sizeTitle-desktop: 3rem;
+$font-sizetext: 1.12rem;
+$font-sizeSubtitle-desktop: 2.25rem;
+
+h1,
+h2,
+h3,
+p,
+a {
+  font-family: $family-font;
+}
+
+h1 {
+  font-weight: $font-weight-title;
+  font-size: $font-sizeTitle-mobile;
+  @media (min-width: 768px) {
+    font-size: $font-sizeTitle-desktop;
+  }
+}
+a {
+  font-weight: $font-weight-text;
+  font-size: $font-sizeLink-mobile;
+  @media (min-width: 768px) {
+    font-size: $font-sizeLink-desktop;
+  }
+}
+
+p{
+  $font-sizetext: 1.12rem;
+}

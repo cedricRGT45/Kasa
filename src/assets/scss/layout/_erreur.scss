@@ -1,0 +1,26 @@
+@use "../utils/variables" as *;
+@use "../base/typography" as *;
+@use "../utils/placeholders" as *;
+
+.erreur {
+  @extend %flex-column-center;
+  gap: 8.69rem;
+  margin: 8.69rem;
+  &__title {
+    width: 37.3125rem;
+    height: 16.4375rem;
+    color: $main-color;
+    text-align: center;
+    font-size: 18rem;
+    font-weight: 700;
+  }
+  &__subtitle {
+    color: $main-color;
+    font-size: 2.25rem;
+    font-weight: 500;
+  }
+  &__link {
+    text-decoration: underline;
+    font-weight: 500;
+  }
+}

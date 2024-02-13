@@ -1,0 +1,42 @@
+@use "../utils/placeholders" as *;
+
+.header {
+  width: 100vw;
+  max-width:90rem;
+  margin:auto;
+  @extend %flex-row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem;
+  @media(max-width:335px){
+    flex-direction: column;
+  }
+  @media (min-width: 768px) {
+    padding: 2.81rem 6.12rem 3.12rem 6.12rem;
+  }
+  &__logo {
+    width: 9.06rem;
+    @media (max-width: 330px) {
+      width: 7rem;
+    }
+    @media (min-width: 768px) {
+      width: 13.14rem;
+    }
+  }
+  &__nav {
+    @extend %flex-row;
+    gap: 1.5rem;
+    @media(max-width:335px){
+      margin-top:.5rem;
+    }
+    @media (min-width: 768px) {
+      gap: 3.56rem;
+    }
+    &-link {
+      text-align: end;
+    }
+    &-link:visited {
+      text-decoration: underline;
+    }
+  }
+}
