@@ -8,7 +8,7 @@ const Carousel = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   return (
-    <DataFetcher url="../../public/logements.json">
+    <DataFetcher url="/logements.json">
       {(data) => {
         const accommodation = data.find((item) => item.id === id);
         const goToPreviousSlide = () => {
