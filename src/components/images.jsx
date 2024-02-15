@@ -15,6 +15,10 @@ const images = {
     .href,
   filledStar: new URL("../assets/images/icones/filledStar.svg", import.meta.url)
     .href,
+  arrowUp: new URL("../assets/images/icones/arrow-down.svg", import.meta.url)
+    .href,
+  arrowDown: new URL("../assets/images/icones/arrow-up.svg", import.meta.url)
+    .href,
 };
 
 export default images;

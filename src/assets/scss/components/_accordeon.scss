@@ -1,0 +1,34 @@
+@use "../utils/placeholders" as *;
+@use "../utils/variables" as *;
+@use "../utils/keyframes" as *;
+
+.accordeon {
+  width: 95%;
+  max-width: 20.93rem;
+  margin: auto;
+  &__item {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin: 1.25rem;
+    &-title {
+      border-radius: 0.3125rem;
+      background: $main-color;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 0.62rem;
+    }
+  }
+  &__content {
+    color: #000;
+    margin: 1.25rem;
+  }
+}
+.animated {
+  animation: rotation 300ms forwards;
+}
+
+.animatedSlide {
+  animation: slideDown 500ms forwards;
+}

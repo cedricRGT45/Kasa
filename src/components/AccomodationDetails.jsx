@@ -7,6 +7,7 @@ import DataFetcher from "./Datafetcher";
 import Carousel from "./Carousel";
 import Erreur from "../pages/Erreur";
 import images from "./images";
+import Accordeon from "./accordeon";
 
 function AccommodationDetails() {
   const { id } = useParams();
@@ -46,14 +47,26 @@ function AccommodationDetails() {
                     alt={accommodation.host.name}
                   />
                 </div>
-                <p>{accommodation.description}</p>
+                {/* <p>{accommodation.description}</p>
                 <h3>Équipements</h3>
                 <ul>
                   {accommodation.equipments.map((equipment, index) => (
                     <li key={index}>{equipment}</li>
                   ))}
-                </ul>
+                </ul> */}
               </div>
+              <Accordeon
+                title="Description"
+                content={accommodation.description}
+              />
+              <Accordeon
+                title="Equipements"
+                content=
+                  {accommodation.equipments.map((equipment, index) => (
+                    <li key={index}>{equipment}</li>
+                  ))}
+                
+              />
             </div>
           </div>
         );

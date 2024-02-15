@@ -174,6 +174,24 @@ a {
   cursor: pointer;
 }
 
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-180deg);
+  }
+}
+@keyframes slideDown {
+  from {
+    transform: translateY(-1.5rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0rem);
+    opacity: 1;
+  }
+}
 #root,
 body,
 .vsc-initialized {
@@ -392,4 +410,36 @@ body,
 }
 .header__nav-link:visited {
   text-decoration: underline;
+}
+
+.accordeon {
+  width: 95%;
+  max-width: 20.93rem;
+  margin: auto;
+}
+.accordeon__item {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  margin: 1.25rem;
+}
+.accordeon__item-title {
+  border-radius: 0.3125rem;
+  background: #FF6060;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.62rem;
+}
+.accordeon__content {
+  color: #000;
+  margin: 1.25rem;
+}
+
+.animated {
+  animation: rotation 300ms forwards;
+}
+
+.animatedSlide {
+  animation: slideDown 500ms forwards;
 }/*# sourceMappingURL=main.css.map */
