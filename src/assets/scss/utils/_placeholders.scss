@@ -7,6 +7,10 @@
     flex-direction:column;
 }
 
+%flex-row{
+  display:flex;
+}
+
 %flex-row-center {
     display: flex;
     justify-content: center;
@@ -16,6 +20,7 @@
   %flex-column-center {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
   }
   

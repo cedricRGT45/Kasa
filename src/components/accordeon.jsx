@@ -3,34 +3,28 @@ import React, { useState } from "react";
 
 const Accordeon = (props) => {
   const [isActive, setIsActive] = useState(false);
-  const [toggle, setToggle] = useState(false);
   return (
-    <div className="accordeon">
-      <div className="accordeon__item">
-        <div className="accordeon__item-title">
+      <div className="accordeon__item ">
+        <div className="accordeon__item-title" onClick={() => setIsActive(!isActive)}>
           <h2>{props.title}</h2>
           <img
-            onClick={() => setIsActive(!isActive)}
-            className={
-              isActive ? "accordeon__item-img animated" : "accordeon__item-img"
-            }
-            src={images.arrowUp}
+            className={isActive ? "animated" : "animated-reverse"}
+            src={images.arrowDown}
             alt="icone flèche vers le bas"
           />
         </div>
         {isActive && (
-          <div
+          <p
             className={
               isActive
-                ? "accordeon__content animatedSlide"
-                : "accordeon__content"
+                ? "accordeon__content animatedSlideDown "
+                : "accordeon__content animatedSlideUp"
             }
           >
             {props.content}
-          </div>
+          </p>
         )}
       </div>
-    </div>
   );
 };
 

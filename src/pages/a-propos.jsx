@@ -10,6 +10,7 @@ const Apropos = () => {
         bannerClassName="banner banner__about"
         imgClassName="banner__img banner__about-img "
       />
+      <div className="accordeon">
       <Accordeon
         title="Fiabilité"
         content="Les annonces postées sur Kasa garantissent une fiabilité
@@ -35,6 +36,7 @@ const Apropos = () => {
                 aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont
                 bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes."
       />
+    </div>
     </div>
   );
 };

@@ -6,7 +6,7 @@ $font-weight-text: 500;
 $font-sizeLink-mobile: 0.75rem;
 $font-sizeLink-desktop: 1.5rem;
 $font-sizeTitle-mobile: 1.5rem;
-$font-sizeTitle-desktop: 3rem;
+$font-sizeTitle-desktop: 2.25rem;
 $font-sizetext: 1.12rem;
 $font-sizeSubtitle-desktop: 2.25rem;
 
@@ -18,6 +18,9 @@ a {
   font-family: $family-font;
 }
 
+h2 {
+  font-size: $font-sizetext;
+}
 h1 {
   font-weight: $font-weight-title;
   font-size: $font-sizeTitle-mobile;
@@ -33,6 +36,6 @@ a {
   }
 }
 
-p{
-  $font-sizetext: 1.12rem;
+p {
+  font-size: $font-sizetext;
 }

@@ -23,6 +23,8 @@ const Carousel = () => {
           );
         };
 
+        const showArrows = accommodation.pictures.length > 1; // Condition pour afficher les flèches
+
         return (
           <div className="accomodation__carousel">
             <img
@@ -30,18 +32,22 @@ const Carousel = () => {
               className="accomodation__carousel-img"
               alt={accommodation.title}
             />
-            <img
-              src={images.rightArrow}
-              className="accomodation__carousel-rightArrow"
-              alt="flèche droite du carousel"
-              onClick={goToNextSlide}
-            />
-            <img
-              src={images.leftArrow}
-              className="accomodation__carousel-leftArrow"
-              alt="flèche gauche du carousel"
-              onClick={goToPreviousSlide}
-            />
+            {showArrows && ( // Condition pour afficher les flèches
+              <>
+                <img
+                  src={images.rightArrow}
+                  className="accomodation__carousel-rightArrow accomodation__carousel-arrow"
+                  alt="flèche droite du carousel"
+                  onClick={goToNextSlide}
+                />
+                <img
+                  src={images.leftArrow}
+                  className="accomodation__carousel-leftArrow accomodation__carousel-arrow"
+                  alt="flèche gauche du carousel"
+                  onClick={goToPreviousSlide}
+                />
+              </>
+            )}
             <p className="accomodation__carousel-counter">
               {currentSlide + 1}/{accommodation.pictures.length}
             </p>

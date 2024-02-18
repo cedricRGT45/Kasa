@@ -1,0 +1,15 @@
+.rate {
+  display: flex;
+  justify-content: flex-start;
+  gap: 0.5rem;
+}
+
+.rate__empty-star,
+.rate__filled-star {
+  width: 1rem;
+  height: 1rem;
+  @media (min-width: 1024px) {
+    width: 2rem;
+    height: 2rem;
+  }
+}

@@ -11,11 +11,9 @@ const images = {
     "../assets/images/icones/arrow_right.svg",
     import.meta.url
   ).href,
-  emptyStar: new URL("../assets/images/icones/emptyStar.svg", import.meta.url)
+  emptyStar: new URL("../assets/images/icones/emptyStar.png", import.meta.url)
     .href,
-  filledStar: new URL("../assets/images/icones/filledStar.svg", import.meta.url)
-    .href,
-  arrowUp: new URL("../assets/images/icones/arrow-down.svg", import.meta.url)
+  filledStar: new URL("../assets/images/icones/filledStar.png", import.meta.url)
     .href,
   arrowDown: new URL("../assets/images/icones/arrow-up.svg", import.meta.url)
     .href,

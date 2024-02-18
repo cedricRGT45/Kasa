@@ -1,19 +1,16 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import Logement from "./pages/Logement";
 import Erreur from "./pages/Erreur";
 import Apropos from "./pages/a-propos";
 import "./assets/css/main.css";
 import AccomodationDetails from "./components/AccomodationDetails";
 import Header from "./components/header";
 import Footer from "./components/footer";
-import { Fragment } from "react";
 
 function App() {
   return (
-  
     <BrowserRouter>
-    <Header />
+      <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/a-propos" element={<Apropos />} />
@@ -24,7 +21,6 @@ function App() {
       </Routes>
       <Footer />
     </BrowserRouter>
-   
   );
 }
 

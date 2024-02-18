@@ -2,25 +2,41 @@
 @use "../utils/variables" as *;
 @use "../utils/keyframes" as *;
 
+.accomodation-accordeon {
+  width: 100%;
+  display: flex;
+  gap: 4.25rem;
+  margin: 0 0 3.12rem 0;
+}
+
 .accordeon {
-  width: 95%;
-  max-width: 20.93rem;
   margin: auto;
   &__item {
+    width: 20.93rem;
     display: flex;
     flex-direction: column;
     color: white;
-    margin: 1.25rem;
+    margin: 1.25rem auto;
+    @media (min-width: 1024px) {
+      max-width: 77.5rem;
+      width: 95%;
+    }
     &-title {
+      width: 100%;
       border-radius: 0.3125rem;
       background: $main-color;
       display: flex;
       justify-content: space-between;
       align-items: center;
       padding: 0 0.62rem;
+      @media (min-width: 1024px) {
+        padding: 0.625rem 1.25rem 0.625rem 0.625rem;
+        font-weight: 700;
+      }
     }
   }
   &__content {
+    @extend %flex-column;
     color: #000;
     margin: 1.25rem;
   }
@@ -29,6 +45,13 @@
   animation: rotation 300ms forwards;
 }
 
-.animatedSlide {
+.animated-reverse {
+  animation: rotationInverted 300ms forwards;
+}
+.animatedSlideDown {
   animation: slideDown 500ms forwards;
+}
+
+.animatedSlideUp {
+  animation: slideUp 2000ms forwards;
 }
