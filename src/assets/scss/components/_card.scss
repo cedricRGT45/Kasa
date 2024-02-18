@@ -54,20 +54,17 @@
       object-fit: cover;
     }
     &-title {
-      width: auto;
-      max-width: 15rem;
-      min-height: 3.25rem;
-      line-height: 3.25rem;
+      width: 100%;
       position: absolute;
-      bottom: 0.94em;
-      left: 1rem;
+      bottom: 0;
+      left: 0;
       color: $title-color;
-      border-radius: 0.625rem;
+      border-radius: 0 0 0.62rem 0.62rem;
       background: rgba(255, 96, 96, 0.8);
       line-height: 1.6rem;
       padding: 0.5rem;
-      @media (min-width: 768px) {
-        height: 4rem;
+      @media (min-width: 1024px) {
+        height: 4.19rem;
       }
     }
   }
