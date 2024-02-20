@@ -1,6 +1,19 @@
 {
   "routes": [
-    { "handle": "filesystem" },
-    { "src": "*", "status": 404, "dest": "./pages/erreur.jsx" }
+    {
+      "src": "/",
+      "dest": "/"
+    },
+    {
+      "src": "/a-propos",
+      "dest": "Apropos"
+    },
+
+    { "src": "/logement/:id/:host", "dest": "AccomodationDetails" },
+
+    {
+      "src": "/*",
+      "dest": "Erreur"
+    }
   ]
 }
