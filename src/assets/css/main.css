@@ -198,7 +198,7 @@ p {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 0.66rem;
+  gap: 1rem;
 }
 @media (min-width: 1024px) {
   .accomodation__content-hostDetails {
@@ -524,8 +524,13 @@ body,
 .accomodation-accordeon {
   width: 100%;
   display: flex;
-  gap: 4.25rem;
+  flex-direction: column;
   margin: 0 0 3.12rem 0;
+}
+@media (min-width: 1024px) {
+  .accomodation-accordeon {
+    gap: 4.25rem;
+  }
 }
 
 .accordeon {
