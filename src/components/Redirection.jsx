@@ -7,7 +7,7 @@ const Redirection = () => {
   useEffect(() => {
     const redirectTimeout = setTimeout(() => {
       navigate("/"); 
-    }, 2500); 
+    }, 3500); 
 
     return () => clearTimeout(redirectTimeout);
   }, [history]);
