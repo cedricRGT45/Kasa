@@ -527,8 +527,9 @@ body,
   flex-direction: column;
   margin: 0 0 3.12rem 0;
 }
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .accomodation-accordeon {
+    flex-direction: row;
     gap: 4.25rem;
   }
 }
@@ -537,13 +538,14 @@ body,
   margin: auto;
 }
 .accordeon__item {
-  width: 20.93rem;
+  width: 100%;
+  max-width: 20.93rem;
   display: flex;
   flex-direction: column;
   color: white;
   margin: 1.25rem auto;
 }
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .accordeon__item {
     max-width: 63.93rem;
     width: 95%;

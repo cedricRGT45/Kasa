@@ -7,20 +7,23 @@
   display: flex;
   flex-direction: column;
   margin: 0 0 3.12rem 0;
-  @media (min-width: 1024px) {
+  @media (min-width: 768px) {
+    flex-direction: row;
     gap: 4.25rem;
   }
 }
 
 .accordeon {
   margin: auto;
+
   &__item {
-    width: 20.93rem;
+    width: 100%;
+    max-width: 20.93rem;
     display: flex;
     flex-direction: column;
     color: white;
     margin: 1.25rem auto;
-    @media (min-width: 1024px) {
+    @media (min-width: 768px) {
       max-width: 63.93rem;
       width: 95%;
     }
