@@ -4,11 +4,11 @@
 
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import DataFetcher from "./Datafetcher";
-import Carousel from "./Carousel";
-import Erreur from "../pages/Erreur";
-import Accordeon from "./accordeon";
-import Rate from "./Rate";
+import DataFetcher from "../components/Datafetcher";
+import Carousel from "../components/Carousel";
+import Erreur from "./Erreur";
+import Accordeon from "../components/accordeon";
+import Rate from "../components/Rate";
 
 function AccommodationDetails() {
   const { id } = useParams();

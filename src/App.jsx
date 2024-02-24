@@ -3,14 +3,14 @@ import Home from "./pages/Home";
 import Erreur from "./pages/Erreur";
 import Apropos from "./pages/a-propos";
 import "./assets/css/main.css";
-import AccomodationDetails from "./components/AccomodationDetails";
+import AccomodationDetails from "./pages/AccomodationDetails";
 import Header from "./components/Header";
 import Footer from "./components/footer";
 
 function App() {
   return (
     <BrowserRouter>
-      <Header /> 
+      <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/a-propos" element={<Apropos />} />

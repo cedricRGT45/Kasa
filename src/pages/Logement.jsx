@@ -1,10 +1,9 @@
 import Banner from "../components/Banner";
-import AccomodationDetails from "../components/AccomodationDetails";
+import AccomodationDetails from "./AccomodationDetails";
 
 const Logement = () => {
   return (
     <div>
-      <Banner />
       <AccomodationDetails />
     </div>
   );

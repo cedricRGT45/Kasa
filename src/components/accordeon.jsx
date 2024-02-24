@@ -18,7 +18,7 @@ const Accordeon = (props) => {
             className={
               isActive
                 ? "accordeon__content animatedSlideDown "
-                : "accordeon__content animatedSlideUp"
+                : ""
             }
           >
             {props.content}
