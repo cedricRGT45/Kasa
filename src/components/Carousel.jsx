@@ -4,6 +4,7 @@ import DataFetcher from "./Datafetcher";
 import images from "./images";
 
 const Carousel = () => {
+  //allowing to extract the id from the URL
   const { id } = useParams();
   const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -23,7 +24,7 @@ const Carousel = () => {
           );
         };
 
-        const showArrows = accommodation.pictures.length > 1; // Condition pour afficher les flèches
+        const showArrows = accommodation.pictures.length > 1; // Condition to dsplay the arrow if there is more than one slide
 
         return (
           <div className="accomodation__carousel">
@@ -32,7 +33,7 @@ const Carousel = () => {
               className="accomodation__carousel-img"
               alt={accommodation.title}
             />
-            {showArrows && ( // Condition pour afficher les flèches
+            {showArrows && (
               <>
                 <img
                   src={images.rightArrow}

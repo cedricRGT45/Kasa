@@ -1,7 +1,13 @@
-import React from "react";
-import { NavLink, Route } from "react-router-dom";
+import React, { useEffect } from "react";
+import { NavLink, useNavigate } from "react-router-dom";
 
 const Erreur404 = (props) => {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    navigate("/404"); // Redirige vers /404 lors du rendu du composant
+  }, [navigate]);
+
   return (
     <div className="erreur">
       <p className="erreur__title">404</p>

@@ -22,3 +22,8 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# OC projects files
+*.zip
+*.pdf
+/node_modules

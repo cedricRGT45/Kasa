@@ -1,12 +1,14 @@
 import Banner from "../components/Banner";
 import Accordeon from "../components/accordeon";
-import images from "../components/images";
+import images from "../components/images"
+
+//Function allowing to import the components that will be displayed on the about page.
 
 const Apropos = () => {
   return (
     <div>
       <Banner
-        image={images.aboutBanner}
+        image={images.aboutBanner}// Allowing to fetch the img path on the image.jsx file
         bannerClassName="banner banner__about"
         imgClassName="banner__img banner__about-img "
       />

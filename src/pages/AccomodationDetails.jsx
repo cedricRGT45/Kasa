@@ -1,12 +1,7 @@
-// useContext() =>utilisation function, state (providerContext)
-// setTimeOut()=>retour acceuil 404
-//deploiement vercel
-
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import DataFetcher from "../components/Datafetcher";
 import Carousel from "../components/Carousel";
-import Erreur from "./Erreur";
 import Accordeon from "../components/accordeon";
 import Rate from "../components/Rate";
 
@@ -16,11 +11,8 @@ function AccommodationDetails() {
   return (
     <DataFetcher url="/logements.json">
       {(data) => {
-        const accommodation = data.find((item) => item.id === id);
+        const accommodation = data.find((item) => item.id === id); //Set the variables to fetch the data according to the item id
 
-        if (!accommodation) {
-          return <Erreur />;
-        }
         return (
           <div>
             <div className="accomodation">
@@ -33,6 +25,7 @@ function AccommodationDetails() {
                   <p className="accomodation__content-location">
                     {accommodation.location}
                   </p>
+                  //map allow to render the list of objects by iteration
                   <div className="accomodation__content-tags">
                     {accommodation.tags.map((tag, index) => (
                       <p className="accomodation__content-tag" key={index}>

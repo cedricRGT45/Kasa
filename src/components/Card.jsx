@@ -31,7 +31,9 @@ function Card({ cover, title }) {
             }}
           >
             <img src={item.cover} alt="location" className="cards__card-img" />
+            <div class="cards__card-bg">
             <p className="cards__card-title">{item.title}</p>
+            </div>
           </NavLink>
         </article>
       ))}

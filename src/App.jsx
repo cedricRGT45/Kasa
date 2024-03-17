@@ -6,6 +6,7 @@ import "./assets/css/main.css";
 import AccomodationDetails from "./pages/AccomodationDetails";
 import Header from "./components/Header";
 import Footer from "./components/footer";
+import { useNavigate } from "react-router-dom";
 
 function App() {
   return (
