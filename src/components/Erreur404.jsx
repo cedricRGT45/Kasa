@@ -5,7 +5,7 @@ const Erreur404 = (props) => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    navigate("/404"); // Redirige vers /404 lors du rendu du composant
+    navigate("/erreur"); // Redirige vers /404 lors du rendu du composant
   }, [navigate]);
 
   return (

@@ -1,0 +1,19 @@
+@use "../base/typography" as *;
+@use "../utils/placeholders" as *;
+
+.footer {
+  @extend %flex-column-center;
+  align-items: center;
+  background: Black;
+  padding: 4.12rem 3rem 3.62rem 3rem;
+  &__logo {
+    width: auto;
+    margin: auto;
+  }
+  &__credit {
+    color: white;
+    font-size: $font-sizeLink-mobile;
+    font-weight: 500;
+    text-align: center;
+  }
+}

@@ -1,0 +1,63 @@
+@use "../utils/placeholders" as *;
+@use "../utils/variables" as *;
+@use "../utils/keyframes" as *;
+
+.accomodation-accordeon {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 3.12rem 0;
+  @media (min-width: 768px) {
+    flex-direction: row;
+    gap: 4.25rem;
+  }
+}
+
+.accordeon {
+  margin: auto;
+
+  &__item {
+    width: 100%;
+    max-width: 20.93rem;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin: 1.25rem auto;
+    @media (min-width: 768px) {
+      max-width: 63.93rem;
+      width: 95%;
+    }
+    &-title {
+      width: 100%;
+      border-radius: 0.3125rem;
+      background: $main-color;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 0.62rem;
+      @media (min-width: 1024px) {
+        padding: 0.625rem 1.25rem 0.625rem 0.625rem;
+        font-weight: 700;
+      }
+    }
+  }
+  &__content {
+    @extend %flex-column;
+    color: #000;
+    margin: 1.25rem;
+  }
+}
+.animated {
+  animation: rotation 300ms forwards;
+}
+
+.animated-reverse {
+  animation: rotationInverted 300ms forwards;
+}
+.animatedSlideDown {
+  animation: slideDown 500ms forwards;
+}
+
+.animatedSlideUp {
+  animation: slideUp 2000ms forwards;
+}

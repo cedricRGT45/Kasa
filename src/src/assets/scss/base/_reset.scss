@@ -1,0 +1,43 @@
+/*Allows the scroll to be smooth*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* includes the border in the dimension settings */
+/* reset margin and padding*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* center the page for larger screen*/
+
+body {
+  margin: auto;
+  height: 100vh;
+  max-width: 1400px;
+}
+
+/* responsive images/*/
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/*cancel the text default decoration*/
+menu,
+ol,
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  all: unset;
+  cursor: pointer;
+}
